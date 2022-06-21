@@ -1,3 +1,10 @@
 body{
     margin:auto;
 }
+.window{
+    background-color: green;
+    color: white;
+}
+#main-container{
+    background-color: gainsboro;
+}
