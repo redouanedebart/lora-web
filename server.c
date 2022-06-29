@@ -20,7 +20,7 @@ int main(int argc, char const* argv[])
   
     servAddr.sin_family = AF_INET;
     servAddr.sin_port = htons(9001);
-    servAddr.sin_addr.s_addr = INADDR_ANY;
+    servAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
   
     // bind socket to the specified IP and port
     bind(servSockD, (struct sockaddr*)&servAddr,
