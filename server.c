@@ -27,7 +27,7 @@ int main(int argc, char const* argv[])
          sizeof(servAddr));
   
     // listen for connections
-    listen(servSockD, 1);
+    listen(servSockD, 10);
   
     // integer to hold client socket.
     int clientSocket = accept(servSockD, NULL, NULL);
